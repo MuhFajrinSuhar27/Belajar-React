@@ -7,6 +7,7 @@ import FormLogin from './components/Fragments/FormLogin.jsx'
 import LoginPage from './pages/login.jsx'
 import RegisterPage from './pages/register.jsx'
 import ErroPage from './pages/404.jsx'
+import ProductsPage from './pages/products.jsx'
 
 
 const router = createBrowserRouter ([
@@ -14,16 +15,20 @@ const router = createBrowserRouter ([
   {
     path: "/",
     element: <LoginPage/>,
-    errorElement:<ErroPage/>
+    errorElement:<ErroPage />
   },
   {
     path: "/login",
-    element: <LoginPage/>
+    element: <LoginPage />
   },
   
   {
     path: "/register",
-    element: <RegisterPage/>
+    element: <RegisterPage />
+  },
+  {
+    path: "/products",
+    element: <ProductsPage />
   },
   
 
