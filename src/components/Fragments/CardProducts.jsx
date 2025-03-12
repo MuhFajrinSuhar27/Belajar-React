@@ -1,3 +1,5 @@
+import Button from "../Elements/Button";
+
 const CardProducts = (props) => {
     const {children} = props;
     return(
@@ -5,11 +7,10 @@ const CardProducts = (props) => {
         {children}
      </div>
   
-
-
     );
 
 };
+
 
 
 const Header = () => {
