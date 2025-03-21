@@ -1,6 +1,7 @@
 import Button from "../components/Elements/Button";
 
 import CardProducts from "../components/Fragments/cardProducts";
+import Counter from "../components/Fragments/Counter";
 
 
 const products = [
@@ -29,10 +30,8 @@ const products = [
 
 
 const email = localStorage.getItem('email')
-
 const HandleLogout = () => {
   window.location.href ="/login"
-
   
 }
 
@@ -53,6 +52,10 @@ const ProductsPage = () => {
           <CardProducts.Footer price={product.price}></CardProducts.Footer>
         </CardProducts>
     )}
+    </div>
+
+    <div className=" flex justify-center">
+    <Counter></Counter>
     </div>
     </>
   ); 
