@@ -2,8 +2,15 @@ import InputForm from "../Elements/input";
 import Button from "../Elements/Button";
 
 const FormRegister = () => {
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+        console.log(e.target.fullname.value);
+        console.log("Berhasil Register")
+        
+    }
     return (
-        <form action="">
+        <form onSubmit={handleRegister}>
          <InputForm 
             label="Fullname" 
             type="text"  

@@ -11,8 +11,6 @@ const CardProducts = (props) => {
 
 };
 
-
-
 const Header = (props) => {
   const {Image} = props;
     return (
