@@ -40,8 +40,7 @@ const products = [
 const email  = localStorage.getItem('email')
 
 const HandleLogout = () => {
-  window.location.href ="/login"
-  
+  window.location.href ="/login"  
 }
 
 
